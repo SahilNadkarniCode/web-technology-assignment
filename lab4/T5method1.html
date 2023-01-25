@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Webpage</title>
+    <style>
+      /* Styles for original heading color */
+      .original {
+        color: black;
+      }
+      /* Styles for replaced heading color */
+      .replaced {
+        color: blue;
+      }
+    </style>
+    <script>
+      function changeColor() {
+        var heading = document.getElementById("heading");
+        var button = document.getElementById("color-button");
+        if (heading.className == "original") {
+          heading.className = "replaced";
+          button.innerHTML = "Back to Original Color";
+        } else {
+          heading.className = "original";
+          button.innerHTML = "Change Color";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <Button onclick="window.location.href = './index.html'">Task 1</Button>
+        <Button onclick="window.location.href = './T2.html'">Task 2</Button>
+        <Button onclick="window.location.href = './T3.html'">Task 3</Button>
+        <Button onclick="window.location.href = './T4.html'">Task 4</Button>
+        <Button onclick="window.location.href = './T5method1.html'">Task 5</Button>
+        <Button onclick="window.location.href = './T6.html'">Task 6</Button>
+    <header>
+      <h1 id="heading" class="original">My webpage</h1>
+    </header>
+    <section id="main">
+      <p>This is main content</p>
+    </section>
+    <button id="color-button" onclick="changeColor()">Change Color</button>
+    <footer>
+      <p>Copyright © 2022 MyWebPage</p>
+    </footer>
+  </body>
+</html>

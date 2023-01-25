@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Webpage</title>
+    <style>
+      /* Styles for original background */
+      .original {
+        background-color: white;
+      }
+      /* Styles for replaced background */
+      .replaced {
+        background-color: blue;
+      }
+    </style>
+    <script>
+      function changeBackground() {
+        var body = document.getElementById("body");
+        var heading = document.getElementById("heading");
+        if (body.className == "original") {
+          alert("Changing background color to blue and text to Changed Text");
+          body.className = "replaced";
+          heading.innerHTML = "Changed Text";
+          heading.style.color = "white";
+          alert("Background color changed to blue and text to Changed Text");
+        } else {
+          alert("Changing background color to white and text to Original Text");
+          body.className = "original";
+          heading.innerHTML = "Original Text";
+          heading.style.color = "black";
+          alert("Background color changed to white and text to Original Text");
+        }
+      }
+    </script>
+  </head>
+  <body id="body" class="original">
+    <Button onclick="window.location.href = './index.html'">Task 1</Button>
+        <Button onclick="window.location.href = './T2.html'">Task 2</Button>
+        <Button onclick="window.location.href = './T3.html'">Task 3</Button>
+        <Button onclick="window.location.href = './T4.html'">Task 4</Button>
+        <Button onclick="window.location.href = './T5method1.html'">Task 5</Button>
+        <Button onclick="window.location.href = './T6.html'">Task 6</Button>
+    <h1 id="heading">Original Text</h1>
+    <button onclick="changeBackground()">Change Background</button>
+    
+  </body>
+</html>

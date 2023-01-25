@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Webpage</title>
+  <script>
+    function changeColor() {
+      var bgColor = document.getElementById("body").style.backgroundColor;
+      var text = document.getElementById("heading").innerHTML;
+      if (bgColor == "lightgreen" && text == "Original Text") {
+        document.getElementById("body").style.backgroundColor = "white";
+        document.getElementById("heading").innerHTML = "Changed Text";
+        document.getElementById("heading").style.color = "red";
+        document.getElementById("heading").style.fontSize = "48pt";
+      } else {
+        document.getElementById("body").style.backgroundColor = "lightgreen";
+        document.getElementById("heading").innerHTML = "Original Text";
+        document.getElementById("heading").style.color = "black";
+        document.getElementById("heading").style.fontSize = "initial";
+      }
+    }
+  </script>
+</head>
+<body id="body" style="background-color: lightgreen;">
+  <Button onclick="window.location.href = './index.html'">Task 1</Button>
+        <Button onclick="window.location.href = './T2.html'">Task 2</Button>
+        <Button onclick="window.location.href = './T3.html'">Task 3</Button>
+        <Button onclick="window.location.href = './T4.html'">Task 4</Button>
+        <Button onclick="window.location.href = './T5method1.html'">Task 5</Button>
+        <Button onclick="window.location.href = './T6.html'">Task 6</Button>
+  <h1 id="heading">Original Text</h1>
+  <button onclick="changeColor()">Change Color</button>
+  <button>Click Me</button>
+</body>
+</html>

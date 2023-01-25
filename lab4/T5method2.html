@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Webpage</title>
+    <script>
+      function changeColor() {
+        var heading = document.getElementById("heading");
+        var button = document.getElementById("color-button");
+        var currentColor = heading.style.color;
+        if (currentColor == "black") {
+          heading.style.color = "blue";
+          button.innerHTML = "Back to Original Color";
+        } else {
+          heading.style.color = "black";
+          button.innerHTML = "Change Color";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1 id="heading" style="color:black;">My webpage</h1>
+    </header>
+    <section id="main">
+      <p>This is main content</p>
+    </section>
+    <button id="color-button" onclick="changeColor()">Change Color</button>
+    <footer>
+      <p>Copyright © 2022 MyWebPage</p>
+    </footer>
+  </body>
+</html>

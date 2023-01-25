@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Webpage</title>
+    <style>
+      /* Styles for original content */
+      .original {
+        font-size: 18px;
+        color: black;
+      }
+      /* Styles for replaced content */
+      .replaced {
+        font-size: 24px;
+        color: blue;
+        text-align: center;
+      }
+    </style>
+    <script>
+      function replaceContent() {
+        var main = document.getElementById("main");
+        var button = document.getElementById("replace-button");
+        if (main.className == "original") {
+          main.className = "replaced";
+          main.innerHTML = "<p>This is replaced content</p>";
+          button.innerHTML = "Back to Original Content";
+        } else {
+          main.className = "original";
+          main.innerHTML = "<p>This is original content</p>";
+          button.innerHTML = "Replace Content";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <Button onclick="window.location.href = './index.html'">Task 1</Button>
+        <Button onclick="window.location.href = './T2.html'">Task 2</Button>
+        <Button onclick="window.location.href = './T3.html'">Task 3</Button>
+        <Button onclick="window.location.href = './T4.html'">Task 4</Button>
+        <Button onclick="window.location.href = './T5method1.html'">Task 5</Button>
+        <Button onclick="window.location.href = './T6.html'">Task 6</Button>
+    <header>
+      <h1>My webpage</h1>
+    </header>
+    <section id="main" class="original">
+      <p>This is original content</p>
+    </section>
+    <button id="replace-button" onclick="replaceContent()">Replace Content</button>
+    <footer>
+      <p>Copyright © 2022 MyWebPage</p>
+    </footer>
+  </body>
+</html>

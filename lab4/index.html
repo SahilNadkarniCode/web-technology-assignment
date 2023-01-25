@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Webpage</title>
+  <script>
+    function changeColor() {
+      var bgColor = document.getElementById("body").style.backgroundColor;
+      var text = document.getElementById("heading").innerHTML;
+      if (bgColor == "white" && text == "Original Text") {
+        document.getElementById("body").style.backgroundColor = "lightgreen";
+        document.getElementById("heading").innerHTML = "Changed Text";
+      } else {
+        document.getElementById("body").style.backgroundColor = "white";
+        document.getElementById("heading").innerHTML = "Original Text";
+      }
+    }
+  </script>
+</head>
+<body id="body">
+  <Button onclick="window.location.href = './index.html'">Task 1</Button>
+        <Button onclick="window.location.href = './T2.html'">Task 2</Button>
+        <Button onclick="window.location.href = './T3.html'">Task 3</Button>
+        <Button onclick="window.location.href = './T4.html'">Task 4</Button>
+        <Button onclick="window.location.href = './T5method1.html'">Task 5</Button>
+        <Button onclick="window.location.href = './T6.html'">Task 6</Button>
+  <h1 id="heading">Original Text</h1>
+  <button onclick="changeColor()">Change Color</button>
+</body>
+</html>
